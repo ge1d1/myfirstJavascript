@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selecting</title>
+</head>
+<body>
+	<h1>Get Element by Tag name.</h1>
+
+	<h2>Get Element by Tag name using query selector.</h2>
+
+	<p id="one">Get Element by ID</p>
+
+	<p id="two">Get Element by ID using Query Selector</p>
+
+	<p class="three">Get Elements by class name</p>
+
+	<p class="four">Get Elements by class name using query selector</p>
+
+	<script>
+		//alert("Hello World!");
+
+		// Get element by tag name and change color - OLD SCHOOL
+
+		var x = document.getElementsByTagName("h1");
+		for (var i =0; x.length; i++) {
+				x[i].style.color ="red";
+		};
+
+	</script>
+	<script>
+
+	//Get element by tag name using query selector
+
+	document.querySelector("h2").style.backgroundColor="pink";
+
+	//Get Element by ID
+
+	document.getElementById("one").style.color="red";
+
+	// Get Element by ID using Query Selector
+
+	document.querySelector("#two").style.backgroundColor="pink";
+
+	</script>
+	<script>
+
+	//Get Element by class name 
+
+		var x = document.getElementsByClassName("three");
+		for (var i =0; i < x.length; i++) {
+			x[i].style.color = "red"
+		};
+
+		//Get Element by class name using query selector
+
+		document.querySelector(".four").style.backgroundColor="pink";
+
+	</script>
+</body>		
+</html>

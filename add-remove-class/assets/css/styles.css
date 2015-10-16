@@ -1,0 +1,14 @@
+.logo h1 {
+	position: absolute;
+	left: -999em;
+}
+
+.logo {
+	height: 100px;
+	width: 100px;
+	background-image: url(../images/logo.png);
+}
+.accessibly-hidden {
+	position: absolute;
+	left: -999em;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<button class="show">Open</button>
+		<div class="overlay">
+			<div>
+				<p>Some Content to show and hide</p>
+				<button class="hide">Close</button>
+			</div>
+		</div>
+
+	
+
+
+
+
+
+	<script>
+	// All browsers except <= ie8.
+	document.addEventListener("DOMContentLoaded", function(){
+
+		var open = document.querySelector(".show"),
+			close = document.querySelector(".hide"),
+			modal = document.querySelector(".overlay");
+
+		modal.classList.add("accessibly-hidden");
+
+		close.addEventListener("click", function(){
+			modal.classList.add("accessibly-hidden");
+
+		});
+
+		open.addEventListener("click", function(){
+				modal.classList.remove("accessibly-hidden");
+
+		});
+	});
+	</script>
+</body>
+</html>

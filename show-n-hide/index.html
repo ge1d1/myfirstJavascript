@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show n hide</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li class="show"><a href="#">Contact</a></li>
+	</ul>
+</nav>
+<div class="enquiries">
+	<p>My name<br>3 City Road<br>Auckland<br>NZ<br>0215555555</p>
+</div>
+	<script>
+	var button = document.querySelector(".show"),
+	var	text = document.querySelector(".enquiries"),
+	var	visible = false;
+
+		text.classList.add("accessibly-hidden");
+
+		button.addEventListener("click", function() {
+			if (visible) {
+				text.classList.add("accessibly-hidden");
+			} else {
+				text.classList.remove("accessibly-hidden");
+			}
+
+			visible = !visible;
+			});
+
+
+	</script>
+</body>
+</html>
